@@ -4,6 +4,9 @@
 
 Get in the "42_so_long" file
 
-Run 'make all'
-
-Run 'make run'
+Run ```bash
+  make run
+```
+Clear Compiled Files ```bash
+  npm run test
+```
