@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ktuncbil <ktuncbil@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/04 17:26:25 by ktuncbil          #+#    #+#             */
+/*   Updated: 2022/09/04 17:34:28 by ktuncbil         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "so_long.h"
 
 void	find_player(t_game *game)
 {
-	int x;
-	int y;
+	int	x;
+	int	y;
 
 	x = 0;
 	while (x < game->map_width)
@@ -25,8 +37,8 @@ void	find_player(t_game *game)
 
 void	sprite_init(t_game *game)
 {
-	int x;
-	int y;
+	int	x;
+	int	y;
 
 	game->player_s = mlx_xpm_file_to_image(game->mlx, PLAYER, &x, &y);
 	game->coin_s = mlx_xpm_file_to_image(game->mlx, COIN, &x, &y);
@@ -47,26 +59,23 @@ t_game	*game_init(char *path)
 	if (map_validation(new))
 	{
 		exit(1);
-		//free le lan
-		//map
-		//new
+		free(new);
 	}
-	new->win = mlx_new_window(new->mlx, new->map_width * SCALE, new->map_height * SCALE, TITLE);
-	mlx_hook(new->win, 2, (1L<<0), key_game, new);
+	new->win = mlx_new_window(new->mlx, new->map_width * SCALE,
+			new->map_height * SCALE, TITLE);
+	mlx_hook(new->win, 2, (1L << 0), key_game, new);
 	sprite_init(new);
 	find_player(new);
-	return (new); 
+	return (new);
 }
-
 
 void	start_game(char *path)
 {
-	t_game 	*game;
-
+	t_game	*game;
 
 	game = game_init(path);
-
 	draw_map(game);
-	mlx_put_image_to_window(game->mlx, game->win, game->player_s, game->px * SCALE, game->py * SCALE);
+	mlx_put_image_to_window(game->mlx, game->win, game->player_s,
+		game->px * SCALE, game->py * SCALE);
 	mlx_loop(game->mlx);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   map_constraction.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayman <ayaman@student.42kocaeli.com.tr>    +#+  +:+       +#+        */
+/*   By: ktuncbil <ktuncbil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/06/29 19:46:42 by yerkiral          #+#    #+#             */
-/*   Updated: 2022/09/01 18:56:15 by ayman            ###   ########.fr       */
+/*   Created: 2022/09/04 17:36:08 by ktuncbil          #+#    #+#             */
+/*   Updated: 2022/09/04 17:36:17 by ktuncbil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

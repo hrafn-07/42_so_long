@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: ktuncbil <ktuncbil@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/04 17:36:52 by ktuncbil          #+#    #+#             */
+/*   Updated: 2022/09/04 17:39:56 by ktuncbil         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "so_long.h"
 
 void	ft_reset(char *buffer)
@@ -9,9 +21,9 @@ void	ft_reset(char *buffer)
 		buffer[i++] = 0;
 }
 
-int 	ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i])
