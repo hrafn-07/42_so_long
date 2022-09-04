@@ -6,7 +6,7 @@
 /*   By: ktuncbil <ktuncbil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 17:26:25 by ktuncbil          #+#    #+#             */
-/*   Updated: 2022/09/04 17:34:28 by ktuncbil         ###   ########.fr       */
+/*   Updated: 2022/09/04 18:35:39 by ktuncbil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,8 +56,10 @@ t_game	*game_init(char *path)
 	new->map = map_constractor(new, open(path, O_RDONLY));
 	new->moves = 0;
 	new->coins = 0;
+	
 	if (map_validation(new))
 	{
+		printf("%s\n","Error Loading Map...");
 		exit(1);
 		free(new);
 	}
