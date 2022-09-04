@@ -4,9 +4,12 @@
 
 Get in the "42_so_long" file
 
-Run ```bash
+Run 
+```bash
   make run
 ```
-Clear Compiled Files ```bash
+
+Clear Compiled Files
+```bash
   npm run test
 ```
