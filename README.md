@@ -1,13 +1,13 @@
 <h2>How to run?</h2>
 
-Get in the "42_so_long" file
+-> Get in the "42_so_long" file
 
-Run 
+-> Run 
 ```bash
   make run
 ```
 
-Clear Compiled Files
+-> Clear Compiled Files
 ```bash
   npm clean
 ```
