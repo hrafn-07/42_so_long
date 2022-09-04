@@ -11,5 +11,5 @@ Run
 
 Clear Compiled Files
 ```bash
-  npm run test
+  npm clean
 ```
