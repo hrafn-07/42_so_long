@@ -9,5 +9,5 @@
 
 -> Clear Compiled Files
 ```bash
-  npm clean
+  make clean
 ```
