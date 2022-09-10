@@ -6,6 +6,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include "../bin/minilibx_opengl_20191021/mlx.h"
+# include "../ft_printf/ft_printf.h"
 
 # define TITLE "so_long"
 # define SCALE 64

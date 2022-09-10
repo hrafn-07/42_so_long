@@ -6,7 +6,7 @@
 /*   By: ktuncbil <ktuncbil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 17:26:25 by ktuncbil          #+#    #+#             */
-/*   Updated: 2022/09/04 18:35:39 by ktuncbil         ###   ########.fr       */
+/*   Updated: 2022/09/10 18:25:39 by ktuncbil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ t_game	*game_init(char *path)
 	
 	if (map_validation(new))
 	{
-		printf("%s\n","Error Loading Map...");
+		ft_printf("%s\n","Error Loading Map...");
 		exit(1);
 		free(new);
 	}

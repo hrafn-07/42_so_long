@@ -5,6 +5,8 @@
 		"__cxx_version": "c",
 		"__hash_table": "c",
 		"functional": "c",
-		"type_traits": "c"
+		"type_traits": "c",
+		"stdlib.h": "c",
+		"unistd.h": "c"
 	}
 }

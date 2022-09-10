@@ -12,17 +12,19 @@ NAME = so_long
 ARG = maps/map4.ber
 
 LIB = bin/minilibx_opengl_20191021
-
+PRINTF = ft_printf/libftprintf.a
 FRAMEWORKS = -framework AppKit -framework OpenGL
 
 INC = inc
 
 all: $(NAME)
 
-$(NAME): $(LIB) $(OBJ)
+$(NAME): $(LIB) $(PRINTF) $(OBJ)
 	@make -C $(LIB)
-	@gcc -o $(NAME) $(OBJ) $(FRAMEWORKS) $(LIB)/libmlx.a
+	@gcc -o $(NAME) $(OBJ) $(FRAMEWORKS) $(LIB)/libmlx.a $(PRINTF)
 
+$(PRINTF):
+	@make -C ./ft_printf
 
 $(OBJ): $(SRC)
 	@gcc -c $^ -I $(INC);mv *.o obj
@@ -32,6 +34,7 @@ run: all
 
 clean:
 	@rm -rf obj/*.o
+	@rm so_long
 
 fclean: clean
 	@rm -rf $(NAME)

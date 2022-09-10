@@ -6,7 +6,7 @@
 /*   By: ktuncbil <ktuncbil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/04 14:39:18 by ktuncbil          #+#    #+#             */
-/*   Updated: 2022/09/04 15:55:17 by ktuncbil         ###   ########.fr       */
+/*   Updated: 2022/09/10 18:17:32 by ktuncbil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,6 +99,6 @@ int	key_game(int keycode, t_game *game)
 	mlx_put_image_to_window(game->mlx, game->win, game->player_s,
 		game->px * SCALE, game->py * SCALE);
 	system("clear");
-	printf("Moves : %d\n", game->moves);
+	ft_printf("Moves : %d\n", game->moves);
 	return (0);
 }
